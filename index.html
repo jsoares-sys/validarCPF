@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Validador de CPF</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Validador de CPF</h1>
+    <p class="sub">Digite um CPF e clique em validar.</p>
+
+    <label for="cpf">CPF</label>
+    <div class="row">
+      <input id="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" maxlength="14" />
+      <button id="btnValidar" type="button">Validar</button>
+    </div>
+
+    <p id="resultado" class="resultado" aria-live="polite"></p>
+
+    <div class="actions">
+      <button id="btnLimpar" type="button" class="secondary">Limpar</button>
+      <button id="btnExemplo" type="button" class="secondary">Colar exemplo</button>
+    </div>
+  </main>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
